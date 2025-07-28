@@ -1,4 +1,3 @@
-// ContactForm.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -31,7 +30,7 @@ const ContactForm = () => {
       transition={{ duration: 0.8 }}
       className="w-full"
     >
-      <div className="bg-gradient-to-br from-[#0d102b] to-[#1a1f4d] rounded-2xl p-1 shadow-lg">
+      <div className=" bg-[#212121] rounded-2xl p-1 shadow-lg">
         <div className="bg-[#0d102b] rounded-xl p-8 backdrop-blur-sm">
           <h2 className="text-2xl font-bold mb-6 text-white">
             <span className="text-[#ffc506]">Send</span> a Message

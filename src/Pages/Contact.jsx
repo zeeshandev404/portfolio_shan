@@ -1,5 +1,4 @@
-// Contact.jsx
-import React from 'react';
+
 import ContactForm from '../components/ContactForm';
 import { Fade, Zoom } from "react-awesome-reveal";
 

@@ -1,7 +1,6 @@
-// About.jsx
 import { useState } from "react";
 import SN from '../assets/about.png';
-import TrueFocus from "../Components/TrueFocus";
+import TrueFocus from "../components/TrueFocus";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 const About = () => {
