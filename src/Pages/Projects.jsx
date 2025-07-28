@@ -11,6 +11,31 @@ import PRT from '../assets/parts.png';
 
 const Projects = () => {
   const projects = [
+{
+      title: "Netflix Clone",
+      description: "Streaming service clone with movie browsing, trailers, and user profiles.",
+      imageUrl: NC,
+      technologies: [
+        { name: "React", icon: "logos:react" },
+        { name: "Firebase", icon: "logos:firebase" },
+        { name: "TMDB API", icon: "simple-icons:themoviedatabase" }
+      ],
+      links: [
+        { 
+          label: "Live Demo", 
+          icon: "mdi:web", 
+          url: "https://stream-flix-api-clone.vercel.app/", 
+          color: "#3B82F6" 
+        },
+        { 
+          label: "GitHub", 
+          icon: "mdi:github", 
+          url: "https://github.com/zeeshandev404/stream-flix-clone", 
+          color: "#333" 
+        }
+      ]
+    },
+
     {
       title: "Gaming Landing Page",
       description: "Responsive landing page for gaming products with modern UI design and animations.",
@@ -59,30 +84,7 @@ const Projects = () => {
         }
       ]
     },
-    {
-      title: "ToDo App",
-      description: "Task management application with drag-and-drop functionality and local storage.",
-      imageUrl: TD,
-      technologies: [
-        { name: "React", icon: "logos:react" },
-        { name: "Redux", icon: "logos:redux" },
-        { name: "Firebase", icon: "logos:firebase" }
-      ],
-      links: [
-        { 
-          label: "Live Demo", 
-          icon: "mdi:web", 
-          url: "https://redux-todo-five-mu.vercel.app/", 
-          color: "#3B82F6" 
-        },
-        { 
-          label: "GitHub", 
-          icon: "mdi:github", 
-          url: "https://github.com/zeeshandev404/redux-todo", 
-          color: "#333" 
-        },
-      ]
-    },
+    
     {
       title: "Property Landing Page",
       description: "Real estate website with property listings, search filters, and contact forms.",
@@ -155,30 +157,31 @@ const Projects = () => {
         }
       ]
     },
+    
     {
-      title: "Netflix Clone",
-      description: "Streaming service clone with movie browsing, trailers, and user profiles.",
-      imageUrl: NC,
+      title: "ToDo App",
+      description: "Task management application with drag-and-drop functionality and local storage.",
+      imageUrl: TD,
       technologies: [
         { name: "React", icon: "logos:react" },
-        { name: "Firebase", icon: "logos:firebase" },
-        { name: "TMDB API", icon: "simple-icons:themoviedatabase" }
+        { name: "Redux", icon: "logos:redux" },
+        { name: "Firebase", icon: "logos:firebase" }
       ],
       links: [
         { 
           label: "Live Demo", 
           icon: "mdi:web", 
-          url: "https://stream-flix-api-clone.vercel.app/", 
+          url: "https://redux-todo-five-mu.vercel.app/", 
           color: "#3B82F6" 
         },
         { 
           label: "GitHub", 
           icon: "mdi:github", 
-          url: "https://github.com/zeeshandev404/stream-flix-clone", 
+          url: "https://github.com/zeeshandev404/redux-todo", 
           color: "#333" 
-        }
+        },
       ]
-    }
+    },
   ];
 
   return (

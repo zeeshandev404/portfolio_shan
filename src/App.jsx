@@ -14,7 +14,7 @@ function App() {
       <Header />
       <main className="flex-grow w-full">
         {/* Hero Section */}
-        <section id="home" className="snap-start">
+        <section id="home" className="snap-start ">
           <HeroSection />
         </section>
 

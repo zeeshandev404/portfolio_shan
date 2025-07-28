@@ -16,7 +16,7 @@ const HeroSection = () => {
 
   const finalStats = [25, 18, 3, 42]; // Your actual stats
 
-  // Social media links with your actual URLs
+  // Social media links
   const socialLinks = [
     { 
       icon: "cib:github", 
@@ -58,7 +58,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="bg-[#212121] text-white w-full min-h-screen flex flex-col justify-center snap-start" id="home">
+    <div className="bg-[#212121] text-white w-full min-h-screen flex flex-col justify-center snap-start pt-20 lg:pt-0" id="home">
       <style jsx>{`
         @keyframes bubble {
           0%, 100% {
@@ -84,15 +84,15 @@ const HeroSection = () => {
         }
       `}</style>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 p-5 w-full h-full relative overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 p-5 w-full h-full relative overflow-hidden pt-16 md:pt-0">
         {/* Background decorative elements */}
         <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-[#ffc506]/10 blur-3xl z-0 transition-all duration-500 hover:bg-[#ffc506]/20"></div>
         <div className="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-gradient-to-r from-[#ffc506]/10 to-[#ffdd66]/10 blur-3xl z-0 transition-all duration-500 hover:opacity-50"></div>
         
         {/* Text Content - Left Side */}
-        <div className="text-center lg:text-left flex-1 z-10 px-4">
+        <div className="text-center lg:text-left flex-1 z-10 px-4 order-2 lg:order-1">
           <Fade direction="top" duration={1000} delay={0} triggerOnce>
-            <h1 className="text-4xl md:text-5xl font-bold text-white font-nerko drop-shadow-lg">
+            <h1 className="text-3xl md:text-5xl font-bold text-white font-nerko drop-shadow-lg mt-8 md:mt-0">
               Hey, I AM ZEESHAN RANA
             </h1>
           </Fade>
@@ -152,7 +152,7 @@ const HeroSection = () => {
 
         {/* Image with enhanced bubble effect - Right Side */}
         <Fade direction="right" duration={1500} delay={1000} triggerOnce>
-          <div className="flex-1 max-w-sm w-full mt-6 lg:mt-0 relative z-10 px-4">
+          <div className="flex-1 max-w-sm w-full mt-4 lg:mt-0 relative z-10 px-4 mb-8 lg:mb-0 order-1 lg:order-2">
             <div className="relative bubble-effect">
               <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-[#ffc506]/30 to-[#ffdd66]/30 blur-xl opacity-70 hover:opacity-100 transition-opacity duration-500 z-0"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-[#ffc506] to-[#ffdd66] z-10 overflow-hidden">
@@ -167,12 +167,17 @@ const HeroSection = () => {
         </Fade>
       </div>
 
-      {/* Stats Section */}
+      {/* Stats Section with Vertical Dividers */}
       <div className="bg-[#2a2a2a] py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative">
+            {/* Vertical dividers - only visible on md screens and up */}
+            <div className="hidden md:block absolute h-16 top-1/2 -translate-y-1/2 left-1/4 w-px bg-[#ffc506]/30"></div>
+            <div className="hidden md:block absolute h-16 top-1/2 -translate-y-1/2 left-2/4 w-px bg-[#ffc506]/30"></div>
+            <div className="hidden md:block absolute h-16 top-1/2 -translate-y-1/2 left-3/4 w-px bg-[#ffc506]/30"></div>
+            
             {stats.map((stat, index) => (
-              <div key={index} className="text-center p-4">
+              <div key={index} className="text-center p-4 relative">
                 <div className="text-3xl md:text-4xl font-bold text-[#ffc506]">
                   {stat.value}+
                 </div>
