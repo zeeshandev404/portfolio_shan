@@ -5,8 +5,8 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
 import Contact from './Pages/Contact';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
