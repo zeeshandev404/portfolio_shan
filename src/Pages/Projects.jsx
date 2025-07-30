@@ -8,7 +8,8 @@ import PP from '../assets/property.png';
 import WP from '../assets/weather.png';
 import NC from '../assets/netflix.png';
 import PRT from '../assets/parts.png';
-
+import ChatGPT from '../assets/chat.png';
+import solar from '../assets/solar.png'
 const Projects = () => {
   const projects = [
 {
@@ -31,6 +32,54 @@ const Projects = () => {
           label: "GitHub", 
           icon: "mdi:github", 
           url: "https://github.com/zeeshandev404/stream-flix-clone", 
+          color: "#333" 
+        }
+      ]
+    },
+ {
+      title: "Inverter Landing Page",
+      description: "Responsive landing page for solar inverter products with modern UI design and animations.",
+      imageUrl: solar,
+      technologies: [
+        { name: "React", icon: "logos:react" },
+        { name: "Tailwind", icon: "logos:tailwindcss-icon" },
+        { name: "Framer Motion", icon: "logos:framer" }
+      ],
+      links: [
+        { 
+          label: "Live Demo", 
+          icon: "mdi:web", 
+          url: "https://solar-inverter.vercel.app/", 
+          color: "#3B82F6" 
+        },
+        { 
+          label: "GitHub", 
+          icon: "mdi:github", 
+          url: "https://github.com/zeeshandev404/solar-inverter", 
+          color: "#333" 
+        }
+      ]
+    },
+{
+      title: "AI ChatGemmini with APi",
+      description: "Responsive Chat Geminni with API with modern UI design and animations.",
+      imageUrl: ChatGPT,
+      technologies: [
+        { name: "React", icon: "logos:react" },
+        { name: "Tailwind", icon: "logos:tailwindcss-icon" },
+        { name: "Framer Motion", icon: "logos:framer" }
+      ],
+      links: [
+        { 
+          label: "Live Demo", 
+          icon: "mdi:web", 
+          url: "https://ai-chatgemini.vercel.app/", 
+          color: "#3B82F6" 
+        },
+        { 
+          label: "GitHub", 
+          icon: "mdi:github", 
+          url: "https://github.com/zeeshandev404/AI-Chatgemini", 
           color: "#333" 
         }
       ]
