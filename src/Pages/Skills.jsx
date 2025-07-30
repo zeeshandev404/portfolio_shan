@@ -10,20 +10,26 @@ const Skills = () => {
 
   const skillData = {
     codingSkills: [
-      { name: 'CSS', value: 80 },
+      { name: 'GitHub/Git', value: 80 },
       { name: 'Tailwind CSS', value: 60 },
       { name: 'JavaScript', value: 70 },
       { name: 'Chakra UI', value: 80 },
       { name: 'React JS', value: 75 },
       { name: 'Rest APIs', value: 70 },
       { name: 'Ant Design', value: 70 },
+       { name: 'CSS', value: 80 },
+        { name: 'HTML', value: 80 },
     ],
     professionalSkills: [
+       { name: 'Redux', value: 80 },
+        { name: 'API Handle', value: 80 },
       { name: 'Web Design', value: 60 },
       { name: 'Web Development', value: 80 },
       { name: 'Landing Page', value: 80 },
       { name: 'Responsive Design', value: 80 },
       { name: 'Figma', value: 70 },
+       { name: 'MongoDB', value: 40 },
+        { name: 'NodeJS', value: 40 },
     ],
   };
 
